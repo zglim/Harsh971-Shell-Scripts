@@ -1,12 +1,29 @@
 #!/bin/bash
 
-echo "First 5 biggest file in the file system passed via positional argument"
+# Find the 5 biggest files/entries in a given directory.
+
+if [ $# -lt 1 ]; then
+    echo "Error: No directory provided." >&2
+    echo "Usage: $0 <directory>" >&2
+    exit 1
+fi
 
 path="$1"
-echo $path
 
-du -ah $path | sort -hr | head -n 5 > /home/harsh/Desktop/filesize.txt
+if [ ! -e "$path" ]; then
+    echo "Error: '$path' does not exist." >&2
+    exit 1
+fi
 
-echo "This is the list of big files in the file system $path "
+if [ ! -d "$path" ]; then
+    echo "Error: '$path' is not a directory." >&2
+    exit 1
+fi
 
-cat /home/harsh/Desktop/filesize.txt
+output_file="./filesize.txt"
+
+echo "Top 5 biggest entries in: $path"
+
+du -ah "$path" | sort -hr | head -n 5 > "$output_file"
+
+cat "$output_file"
