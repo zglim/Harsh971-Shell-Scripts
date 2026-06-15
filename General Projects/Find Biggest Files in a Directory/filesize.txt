@@ -1,0 +1,5 @@
+208K	/Users/zcl/hc/ali/l1-rubrics-auto-hq/project/ccrl007296/qwen/General Projects/Find Biggest Files in a Directory
+192K	/Users/zcl/hc/ali/l1-rubrics-auto-hq/project/ccrl007296/qwen/General Projects/Find Biggest Files in a Directory/image1.png
+8.0K	/Users/zcl/hc/ali/l1-rubrics-auto-hq/project/ccrl007296/qwen/General Projects/Find Biggest Files in a Directory/test-biggest-files.sh
+4.0K	/Users/zcl/hc/ali/l1-rubrics-auto-hq/project/ccrl007296/qwen/General Projects/Find Biggest Files in a Directory/biggest-files.sh
+4.0K	/Users/zcl/hc/ali/l1-rubrics-auto-hq/project/ccrl007296/qwen/General Projects/Find Biggest Files in a Directory/README.md
